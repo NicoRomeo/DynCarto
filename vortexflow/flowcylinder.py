@@ -398,6 +398,7 @@ def make_movie(filename, data, geometry):
 
 
 if __name__ == "__main__":
+    ## uncomment for a test run
     #print("Test run....")
     mu_in = 0.001
     Trun = 8
@@ -408,6 +409,7 @@ if __name__ == "__main__":
     #print("~ test complete ~")
     
     #mu_arr = np.linspace(0.0007, 0.0025, 20)
+    ### batch of simulations
     mu_arr = np.linspace(0.0026, 0.005, 10)
     for i, mu in enumerate(mu_arr):
         print("++++ i = {0}".format(i))
